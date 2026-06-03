@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciaa "EL DURO" | Sitio Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#050505] text-white font-sans min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#0d0d12_1px,transparent_1px),linear-gradient(to_bottom,#0d0d12_1px,transparent_1px)] bg-[size:5rem_5rem] pointer-events-none"></div>
+    <div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-40 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-[180px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 max-w-5xl relative z-10 flex-grow">
+        <header class="flex justify-between items-center py-8 border-b border-zinc-900">
+            <div class="font-poppins text-2xl font-black tracking-widest text-white">
+                CIAA<span class="text-emerald-400">.</span>
+            </div>
+            <nav class="flex items-center gap-6">
+                <a href="#bio" class="text-sm font-semibold tracking-wide hover:text-emerald-400 transition-colors uppercase">Biografía</a>
+                <a href="../en/" class="text-xs font-bold py-1.5 px-3 rounded bg-zinc-900 border border-zinc-800 hover:border-cyan-400 text-zinc-400 hover:text-cyan-400 transition-all uppercase">EN</a>
+            </nav>
+        </header>
+
+        <main class="py-16 md:py-24 space-y-16">
+            <section class="text-center space-y-6">
+                <p class="text-emerald-400 text-xs md:text-sm font-bold tracking-[0.4em] uppercase">Sencillo de Debut Disponible ya</p>
+                <h1 class="font-poppins text-6xl md:text-8xl font-black tracking-tighter leading-none bg-gradient-to-b from-white via-zinc-100 to-zinc-500 bg-clip-text text-transparent">
+                    EL DURO
+                </h1>
+                <p class="text-zinc-400 max-w-xl mx-auto text-sm md:text-base tracking-wide font-medium">
+                    Explora el sonido urbano de Cristóbal Ignacio A (Ciaa), marcando la pauta desde Chile.
+                </p>
+                <div class="pt-6">
+                    <a href="./sindestinofijo/" class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-black font-bold uppercase tracking-widest text-xs md:text-sm px-8 py-5 rounded-full shadow-[0_0_30px_rgba(16,185,129,0.3)] transition-all duration-300 hover:scale-105">
+                        <i class="fa-solid fa-play text-sm"></i> Escuchar "Sin Destino Fijo"
+                    </a>
+                </div>
+            </section>
+
+            <section id="bio" class="bg-zinc-950/60 backdrop-blur-md border border-zinc-900 p-8 md:p-12 rounded-3xl space-y-6 relative">
+                <div class="absolute top-0 right-12 w-32 h-[1px] bg-gradient-to-r from-transparent via-emerald-500 to-transparent"></div>
+                <div class="space-y-2">
+                    <span class="text-xs uppercase tracking-widest text-zinc-500 font-bold">La Historia</span>
+                    <h2 class="font-poppins text-3xl font-black uppercase tracking-wide">Biografía</h2>
+                </div>
+                <div class="h-1 w-12 bg-emerald-400 rounded-full"></div>
+                <p class="text-zinc-300 text-base md:text-lg leading-relaxed max-w-3xl">
+                    <strong>Ciaa "EL DURO"</strong>, conocido anteriormente como <em>ThisIsCris</em>, es el pseudónimo artístico de <strong>Cristóbal Ignacio A</strong>, un cantante y compositor chileno que está redefiniendo el sonido de la música urbana. 
+                </p>
+                <p class="text-zinc-400 text-base leading-relaxed max-w-3xl">
+                    Con un estilo afilado y barras potentes, debutó de forma oficial con su aclamado single <strong class="text-white">"Sin Destino Fijo"</strong> en mayo del 2026. Su propuesta destaca por la autenticidad y frescura musical, logrando conectar de inmediato con una comunidad masiva de oyentes y consolidando una proyección internacional imparable.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="border-t border-zinc-900 bg-zinc-950/30 py-8 text-center text-zinc-600 text-xs tracking-wider">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 EL DURO. Todos los derechos reservados.</p>
+            <div class="flex gap-4">
+                <span class="text-zinc-700">CL</span>
+                <span class="text-emerald-500/50">//</span>
+                <span class="text-zinc-500 uppercase">Urbano Chileno</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
