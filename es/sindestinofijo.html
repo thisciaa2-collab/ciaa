@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciaa - Sin Destino Fijo | Lanzamiento Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2 family=Poppins:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#050505] text-white font-sans min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#0d0d12_1px,transparent_1px),linear-gradient(to_bottom,#0d0d12_1px,transparent_1px)] bg-[size:5rem_5rem] pointer-events-none"></div>
+    <div class="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 max-w-5xl relative z-10 flex-grow py-8">
+        <header class="flex justify-between items-center py-4 mb-12">
+            <a href="../" class="inline-flex items-center gap-2 text-zinc-500 hover:text-emerald-400 font-bold uppercase tracking-wider text-xs transition-colors">
+                <i class="fa-solid fa-arrow-left"></i> Volver a la web
+            </a>
+            <span class="text-[10px] uppercase tracking-[0.22em] text-zinc-600 font-bold">Lanzamiento</span>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Album Cover Container -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-[380px] aspect-square rounded-3xl overflow-hidden group border border-zinc-800 shadow-[0_20px_50px_rgba(0,0,0,0.8)] transition-all duration-500 hover:border-emerald-500/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)]">
+                    <span class="absolute top-4 left-4 z-20 bg-emerald-500 text-black font-poppins text-[10px] font-black uppercase tracking-wider px-3 py-1.5 rounded-md shadow-md">
+                        DEBUT
+                    </span>
+                    <!-- Fallback to Police Helicopter Design if original file is absent -->
+                    <img src="../../sindestinofijo.png" alt="Sin Destino Fijo de Ciaa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://images.stockcake.com/public/c/4/c/c4c8237b-7d8c-4750-9ca6-425a4108d28f_large/nighttime-urban-scene-stockcake.jpg'">
+                </div>
+            </div>
+
+            <!-- Single Info and Streaming Links -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="space-y-2">
+                    <p class="text-emerald-400 text-xs font-bold uppercase tracking-[0.3em]">Ciaa <span class="text-zinc-600 text-xs font-medium uppercase tracking-normal lowercase">(ex: ThisIsCris)</span></p>
+                    <h1 class="font-poppins text-4xl md:text-5xl font-black tracking-tight leading-none">Sin Destino Fijo</h1>
+                </div>
+
+                <div class="flex items-center gap-3 text-xs uppercase tracking-widest text-zinc-500 font-semibold">
+                    <span>Sencillo Oficial</span>
+                    <span>•</span>
+                    <span>Mayo 2026</span>
+                </div>
+
+                <p class="text-zinc-400 text-sm md:text-base leading-relaxed">
+                    "Sin Destino Fijo" marca el inicio de mi carrera artística. Presentado en mayo del 2026, el tema nació de manera orgánica en el estudio: a medida que el proceso creativo avanzaba, la inspiración fluyó más y más hasta lograr conectar de forma única con el público, convirtiéndose rápidamente en un fenómeno viral.
+                </p>
+
+                <div class="bg-zinc-950/80 border border-zinc-900 rounded-2xl divide-y divide-zinc-900 overflow-hidden">
+                    <!-- Spotify -->
+                    <div class="flex items-center justify-between p-5 hover:bg-zinc-900/30 transition-colors">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-brands fa-spotify text-2xl text-[#1DB954]"></i>
+                            <span class="font-bold text-sm tracking-wide">Spotify</span>
+                        </div>
+                        <a href="https://open.spotify.com/intl-es/album/0NMOpFSRGl3Hr4KnCDy3KG" target="_blank" class="text-[10px] md:text-xs font-bold uppercase tracking-wider bg-zinc-900 hover:bg-emerald-500 hover:text-black py-2.5 px-5 rounded-full transition-all duration-300 border border-zinc-800 hover:border-emerald-400">
+                            Escuchar
+                        </a>
+                    </div>
+
+                    <!-- Apple Music -->
+                    <div class="flex items-center justify-between p-5 hover:bg-zinc-900/30 transition-colors">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-brands fa-apple text-2xl text-[#FC3C44]"></i>
+                            <span class="font-bold text-sm tracking-wide">Apple Music</span>
+                        </div>
+                        <a href="https://music.apple.com/cl/album/sin-destino-fijo/6773438127?i=6773438129" target="_blank" class="text-[10px] md:text-xs font-bold uppercase tracking-wider bg-zinc-900 hover:bg-emerald-500 hover:text-black py-2.5 px-5 rounded-full transition-all duration-300 border border-zinc-800 hover:border-emerald-400">
+                            Escuchar
+                        </a>
+                    </div>
+
+                    <!-- YouTube Music -->
+                    <div class="flex items-center justify-between p-5 hover:bg-zinc-900/30 transition-colors">
+                        <div class="flex items-center gap-4">
+                            <i class="fa-brands fa-youtube text-2xl text-[#FF0000]"></i>
+                            <span class="font-bold text-sm tracking-wide">YouTube Music</span>
+                        </div>
+                        <a href="https://music.youtube.com/playlist?list=OLAK5uy_mFKNtdmeWl8gY09ChhJrB3-zp6Md6jb5M" target="_blank" class="text-[10px] md:text-xs font-bold uppercase tracking-wider bg-zinc-900 hover:bg-emerald-500 hover:text-black py-2.5 px-5 rounded-full transition-all duration-300 border border-zinc-800 hover:border-emerald-400">
+                            Escuchar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-zinc-900 bg-zinc-950/30 py-6 text-center text-zinc-700 text-[10px] uppercase tracking-widest">
+        &copy; 2026 EL DURO. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
